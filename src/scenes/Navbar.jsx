@@ -31,14 +31,37 @@ export default function Navbar({selectedPage, setSelectedPage}) {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
               />
+              <Link page="About" 
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              />
+              <Link page="Projects" 
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              /> 
+              <Link page="Contact Me" 
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              />            
             </div>
           )
           :
           (
-            <div>
+            <button className='rounded-full bg-red p-2'
+            onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              <img src="../assets/menu-icon.svg" alt="menu-icon" />
+            </button>
+          )}
+
+          {/* Mobile Menu Popup */}
+          {!isAboveSmallScreens && isMenuToggled && (
+            <div className='fixed right-0 bottom-0 h-full bg-blue w-[300px]'>
+              {/* CLOSE ICON */}
+              <div className='flex justify-end p-12'>
+                <button onClick={() => setIsMenuToggled(!isMenuToggled)}></button>
+              </div>
             </div>
-          )
-        }
+          )}
       </div>
     </nav>
   )
