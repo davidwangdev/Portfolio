@@ -2,6 +2,8 @@ import Navbar from "./scenes/Navbar";
 import { useEffect, useState } from 'react';
 import './App.css';
 import useMediaQuery from './hooks/useMediaQuery';
+import DotGroup from './scenes/DotGroup';
+import Landing from './scenes/Landing';
 
 function App() {
 
@@ -21,6 +23,12 @@ function App() {
   return (
     <div className="app bg-deep-blue">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+      <div className='w-5/6 mx-auto md:h-full'>
+        {isAboveMediumScreens && (
+          <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+        )}
+        <Landing setSelectedPage={setSelectedPage} />
+      </div>
     </div>
   )
 }
