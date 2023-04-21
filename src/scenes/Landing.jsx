@@ -8,28 +8,10 @@ export default function Landing({setSelectedPage}) {
   return (
     <section className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'>
       <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32'>
-        {isAboveMediumScreens ? (
-          <div className='relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
-            before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full  
-            before:border-2 before:border-blue before:z-[-1]'>
-            <img src="/profile-image.png" alt="profile"
-            className='hover:filter hover:saturate-200 hover:-translate-x-32 hover:-translate-y-20 
-            transition duration-500 z-10 w-full max-w-[400px] 
-            md:max-w-[600px]' />
-          </div>
-        )
-        :
-        (
-          <img src="/profile-image.png" alt="profile"
-          className='hover:filter hover:saturate-200 hover:-translate-x-32 hover:-translate-y-20 
-          transition duration-500 z-10 w-full max-w-[400px] 
-          md:max-w-[600px]' />
-        )
-        }
       </div>
         {/* Main Section */}
 
-        <div className='z-30 basis-2/5 mt-12 md:mt-32'>
+        <div className='z-30 mt-12'>
           {/* Headings */}
           <motion.div
            initial="hidden"
@@ -42,10 +24,10 @@ export default function Landing({setSelectedPage}) {
            }}
           >
             <p className='text-6xl z-10 text-center md:text-start'>
-              Hi, I'm David
+              Hi, I'm David.
             </p>
 
-            <p className='mt-10 mb-7 text-4xl text-center md:text-start'>
+            <p className='mt-10 mb-10 text-4xl text-center md:text-start'>
               Full Stack Developer
             </p>
           </motion.div>
@@ -66,7 +48,7 @@ export default function Landing({setSelectedPage}) {
               onClick={() => setSelectedPage('contact')}
               href="#contact"
             >
-              Contact Me.
+              Currently looking for work.
             </AnchorLink>
             <AnchorLink 
               className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
@@ -75,8 +57,7 @@ export default function Landing({setSelectedPage}) {
             >
               <div className='bg-deep-blue hover:text-red transition duration-500
               w-full h-full flex items-center justify-center px-10'>
-              I'm open to work.
-              Let's Chat!
+              Let's chat.
               </div>
             </AnchorLink>
 

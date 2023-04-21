@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       if(window.scrollY === 0) setIsTopOfPage(true);
-      if(window.scrollY !== 0) setIsTopOfPage(false);
+      if(window.scrollY >= 500) setIsTopOfPage(false);
     }
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -32,7 +32,7 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className='w-5/6 mx-auto md:h-full'>
+      <div className=' mx-auto md:h-full bg-deep-blue'>
         <Skills />
       </div>
     </div>
