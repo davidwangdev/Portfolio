@@ -25,7 +25,7 @@ export default function Navbar({isTopOfPage, selectedPage, setSelectedPage}) {
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? 
           (
-            <div className='flex gap-16 font-opensans text-sm font-semibold'>
+            <div className='flex gap-16 text-sm font-semibold'>
               <Link page="Home" 
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
@@ -48,7 +48,7 @@ export default function Navbar({isTopOfPage, selectedPage, setSelectedPage}) {
           (
             <button className='rounded-full bg-red p-2'
             onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <img src="../assets/menu-icon.svg" alt="menu-icon" />
+              <img src="/menu-icon.svg" />
             </button>
           )}
 

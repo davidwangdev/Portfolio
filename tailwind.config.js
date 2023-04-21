@@ -23,15 +23,12 @@ export default {
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
-      fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        opensans: ["Open Sans", "sans-serif"],
-      },
       content: {
-        brush: "url('./assets/brush.png')",
-        person1: "url('./assets/person-1.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
+        brush: "url('/brush.png')",
+        person1: "url('/person-1.png')",
+        person2: "url('/person-2.png')",
+        person3: "url('/person-3.png')",
+        menuicon: "url(/menu-icon.svg)",
       },
     },
     screens: {

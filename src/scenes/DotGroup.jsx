@@ -13,19 +13,19 @@ export default function DotGroup({selectedPage, setSelectedPage}) {
         onClick={() => setSelectedPage('home')}
       />
       <AnchorLink
-        className={`${selectedPage === 'home' ? selectedStyles : "bg-dark-grey"} 
+        className={`${selectedPage === 'skills' ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#skills"
         onClick={() => setSelectedPage('home')}
       />
       <AnchorLink
-        className={`${selectedPage === 'home' ? selectedStyles : "bg-dark-grey"} 
+        className={`${selectedPage === 'projects' ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#projects"
         onClick={() => setSelectedPage('home')}
       />
       <AnchorLink
-        className={`${selectedPage === 'home' ? selectedStyles : "bg-dark-grey"} 
+        className={`${selectedPage === 'contact' ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
         href="#contact"
         onClick={() => setSelectedPage('home')}
