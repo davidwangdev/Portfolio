@@ -6,6 +6,7 @@ import LineGradient from './components/LineGradient';
 import DotGroup from './scenes/DotGroup';
 import Landing from './scenes/Landing';
 import Skills from './scenes/Skills';
+import Projects from './scenes/Projects';
 
 function App() {
 

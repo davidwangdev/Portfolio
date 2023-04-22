@@ -24,7 +24,7 @@ export default function Skills() {
           visible: {opacity: 1, x: 0},
         }}>
           <p className='font-semibold text-4xl mb-5'>
-            <span className='text-red'>Technologies</span>
+            <span className='text-red'>My Skills / Technologies</span>
           </p>
           <LineGradient width='w-full' />
         </motion.div>
@@ -32,68 +32,159 @@ export default function Skills() {
         
 
       {/* Skills */}
-      <div className='flex flex-row mt-20 gap-20 mr-24 transition ease-in delay-150 duration-500'>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/HTML.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+      <div className='flex flex-col md:flex-row mt-20 gap-20 mr-24'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5}}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/HTML.png" className='w-24 h-24' />
             HTML
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/CSS.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.1 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/CSS.png" className='w-24 h-24' />
             CSS
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/JS.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.2 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/JS.png" className='w-24 h-24' />
             JavaScript
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/Python.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.3 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/Python.png" className='w-24 h-24' />
             Python
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.4 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
           <img src="/Node.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
             Node
-          </div>
+          </motion.div>
         </p>
       </div>
-      <div className='flex flex-row mt-20 gap-20 mr-24'>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/Next.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+
+      <div className='flex flex-col md:flex-row mt-20 gap-20 mr-24'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/Next.png" className='w-24 h-24' />
             Next
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/Git.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.1 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/Git.png" className='w-24 h-24' />
             Git
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/MongoDB.png" className='w-24 h-24' />
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.2 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/MongoDB.png" className='w-24 h-24' />
             MongoDB
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/React.png" className='w-24 h-24'/>
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.3 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/React.png" className='w-24 h-24' />
             React
-          </div>
+          </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
-          <img src="/Express.png" className='w-24 h-24'/>
-          <div className='text-center text-lg'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+          <motion.div
+            className='text-center text-lg'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.4 }}
+            variants={{
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            }}>
+            <img src="/Express.png" className='w-24 h-24' />
             Express
-          </div>
+          </motion.div>
         </p>
       </div>
 
