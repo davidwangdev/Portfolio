@@ -36,6 +36,10 @@ function App() {
       <div className=' mx-auto md:h-full bg-deep-blue'>
         <Skills />
       </div>
+      <div className=' mx-auto md:h-full bg-deep-blue'>
+        <Projects />
+      </div>
+
     </div>
   )
 }
