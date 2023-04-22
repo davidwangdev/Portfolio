@@ -5,10 +5,6 @@ import {motion} from 'framer-motion';
 export default function Skills() {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
-  {/* Skills to include:
-  React, JS, HTML, CSS, Tailwind, Next, Node, MongoDB, Git, Express
-  */}
-
   return (
     <section id="skills" className='pt-10 pb-24 ml-24'>
       {/* Header section */}
