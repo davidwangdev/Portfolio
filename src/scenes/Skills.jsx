@@ -12,7 +12,7 @@ export default function Skills() {
   return (
     <section id="skills" className='pt-10 pb-24 ml-24'>
       {/* Header section */}
-      <div className='md:flex md:justify-between md:gap-16 mt-32'>
+      <div className='md:flex md:justify-between md:gap-16 mt-12'>
         <motion.div
           className='md:w-1/3'
           initial="hidden"
@@ -24,52 +24,78 @@ export default function Skills() {
           visible: {opacity: 1, x: 0},
         }}>
           <p className='font-semibold text-4xl mb-5'>
-            <span className='text-red'>Skills</span>
+            <span className='text-red'>Technologies</span>
           </p>
-          <LineGradient width='w-1/3' />
+          <LineGradient width='w-full' />
         </motion.div>
-
-        <div className='mt-16 md:mt-0 mr-24'>
-          {isAboveMediumScreens ? (
-            <>
-              <p className='mt-10 mb-7 text-white rounded-full border-2 p-6 border-cyan-500'>
-                <img src="/react.png" width={50} />
-                <div className='text-center text-lg'>
-                  React
-                </div>
-              </p>
-              <p className='mt-10 mb-7 text-white rounded-full border-2 p-6 border-cyan-500'>
-                <img src="/react.png" width={50} />
-                <div className='text-center text-lg'>
-                  React
-                </div>
-              </p>
-              <p className='mt-10 mb-7 text-white rounded-full border-2 p-6 border-cyan-500'>
-                <img src="/react.png" width={50} />
-                <div className='text-center text-lg'>
-                  React
-                </div>
-              </p>
-              <p className='mt-10 mb-7 text-white rounded-full border-2 p-6 border-cyan-500'>
-                <img src="/react.png" width={50} />
-                <div className='text-center text-lg'>
-                  React
-                </div>
-              </p>
-            </>
-
-            
-          )
-          :
-          (
-            <div>
-            </div>
-          )
-          }
-        </div>
       </div>
+        
 
       {/* Skills */}
+      <div className='flex flex-row mt-20 gap-20 mr-24 transition ease-in delay-150 duration-500'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/HTML.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            HTML
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/CSS.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            CSS
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/JS.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            JavaScript
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/Python.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            Python
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/Node.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            Node
+          </div>
+        </p>
+      </div>
+      <div className='flex flex-row mt-20 gap-20 mr-24'>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/Next.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            Next
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/Git.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            Git
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/MongoDB.png" className='w-24 h-24' />
+          <div className='text-center text-lg'>
+            MongoDB
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/React.png" className='w-24 h-24'/>
+          <div className='text-center text-lg'>
+            React
+          </div>
+        </p>
+        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full'>
+          <img src="/Express.png" className='w-24 h-24'/>
+          <div className='text-center text-lg'>
+            Express
+          </div>
+        </p>
+      </div>
 
       
     </section>
