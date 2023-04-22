@@ -163,7 +163,7 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/React.png" className='w-24 h-24' />
+            <img src="/react.png" className='w-24 h-24' />
             React
           </motion.div>
         </p>
