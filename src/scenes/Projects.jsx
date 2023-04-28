@@ -27,14 +27,14 @@ const Project = ({name, title}) => {
           {title}
         </p>
       </div>
-      <img src={`/${projectTitle}.png`} alt={title}/>
+      <img src={`/${projectTitle}.png`} alt={title} width={800}/>
     </motion.div>
   )
 }
 
 export default function Projects() {
   return (
-    <section id="projects" className='pt-24 pb-96 bg-deep-blue'>
+    <section id="projects" className='pt-24 pb-48 bg-deep-blue'>
       {/* Headings */}
       <motion.div
         className='w-1/2 mx-auto text-center'
@@ -54,7 +54,6 @@ export default function Projects() {
 
       <div className='flex justify-center mt-8'>
         <motion.div
-          className='grid grid-cols-3'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

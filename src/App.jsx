@@ -42,7 +42,7 @@ function App() {
         <Projects />
       </div>
         <LineGradient />
-      <div className='mx-auto h-full bg-deep-blue'>
+      <div className='mx-auto h-full w-full bg-deep-blue'>
         <Contact />
       </div>
 

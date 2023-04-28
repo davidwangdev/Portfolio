@@ -49,12 +49,12 @@ export default function Landing({setSelectedPage}) {
             </AnchorLink>
             <AnchorLink 
               className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
-              onClick={() => setSelectedPage('contact')}
-              href="#contact"
+              onClick={() => setSelectedPage('contact me!')}
+              href="#contact me!"
             >
               <div className='bg-deep-blue hover:text-red transition duration-500
               w-full h-full flex items-center justify-center px-10'>
-              Let's chat!
+                Let's chat!
               </div>
             </AnchorLink>
           </motion.div>
