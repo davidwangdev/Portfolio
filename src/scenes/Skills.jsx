@@ -14,7 +14,7 @@ export default function Skills() {
           className='w-1/3'
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
           variants={{ 
           hidden: { opacity: 0, x: -50},
@@ -35,7 +35,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5}}
+            viewport={{ once: true, amount: 0.5}}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -50,7 +50,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -65,7 +65,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -80,7 +80,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -95,7 +95,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.4 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -113,7 +113,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -128,7 +128,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -143,7 +143,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -158,7 +158,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -173,7 +173,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.4 }}
             variants={{
               hidden: { opacity: 0, x: -100 },

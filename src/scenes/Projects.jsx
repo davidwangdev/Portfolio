@@ -40,7 +40,7 @@ export default function Projects() {
         className='w-1/2 mx-auto text-center'
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -50,7 +50,6 @@ export default function Projects() {
           Projects
         </div>
         <LineGradient width='w-full' />
-        <br/>
       </motion.div>
 
       <div className='flex justify-center mt-8'>
@@ -58,7 +57,7 @@ export default function Projects() {
           className='grid grid-cols-3'
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
           {/* Row 1 */}
