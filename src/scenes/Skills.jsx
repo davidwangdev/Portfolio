@@ -1,19 +1,20 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
 import {motion} from 'framer-motion';
 
+
+
+
 export default function Skills() {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
     <section id="skills" className='pt-10 pb-24 ml-24'>
       {/* Header section */}
-      <div className='md:flex md:justify-between md:gap-16 mt-12'>
+      <div className='flex justify-between gap-16 mt-12'>
         <motion.div
-          className='md:w-1/3'
+          className='w-1/3'
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 1 }}
           variants={{ 
           hidden: { opacity: 0, x: -50},
@@ -28,13 +29,13 @@ export default function Skills() {
         
 
       {/* Skills */}
-      <div className='flex flex-col md:flex-row mt-20 gap-20 mr-24'>
+      <div className='flex flex-row mt-10 gap-20 mr-24'>
         <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5}}
+            viewport={{ once: false, amount: 0.5}}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -49,7 +50,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -64,7 +65,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -79,7 +80,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -94,7 +95,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.4 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -106,13 +107,13 @@ export default function Skills() {
         </p>
       </div>
 
-      <div className='flex flex-col md:flex-row mt-20 gap-20 mr-24'>
+      <div className='flex flex-row gap-20 mr-24'>
         <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -127,7 +128,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -142,7 +143,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -157,7 +158,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
@@ -172,7 +173,7 @@ export default function Skills() {
             className='text-center text-lg'
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1.4 }}
             variants={{
               hidden: { opacity: 0, x: -100 },
