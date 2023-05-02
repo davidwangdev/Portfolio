@@ -34,7 +34,7 @@ const Project = ({name, title}) => {
 
 export default function Projects() {
   return (
-    <section id="projects" className='pt-24 pb-48 bg-deep-blue'>
+    <section id="projects" className='pt-24 pb-96 bg-deep-blue'>
       {/* Headings */}
       <motion.div
         className='w-1/2 mx-auto text-center'

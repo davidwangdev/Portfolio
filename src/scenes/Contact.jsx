@@ -3,14 +3,9 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const {
-    register,
-    trigger,
-    formState: { errors },
-  } = useForm();
+  const {register, trigger, formState: { errors }} = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -19,7 +14,6 @@ const Contact = () => {
 
   return (
     <section id="contact me!">
-      {/* FORM & IMAGE */}
 
       <div className="flex gap-16 mt-5 text-center justify-center">
         <motion.div
