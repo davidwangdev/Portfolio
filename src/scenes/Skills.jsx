@@ -21,7 +21,7 @@ export default function Skills() {
           visible: {opacity: 1, x: 0},
         }}>
           <p className='font-semibold text-4xl mb-5'>
-            <span className='text-red'>My Skills / Technologies</span>
+            <span className='text-red'>Skills / Technologies</span>
           </p>
           <LineGradient width='w-full' />
         </motion.div>
@@ -29,8 +29,8 @@ export default function Skills() {
         
 
       {/* Skills */}
-      <div className='flex flex-row mt-10 gap-20 mr-24'>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+      <div className='flex flex-row mt-10 gap-x-24 mr-24'>
+        <p className='mt-10 mb-10 text-white p-10 border-green-500 rounded-full border-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -41,11 +41,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/HTML.png" className='w-24 h-24' />
-            HTML
+            <img src="/SQL.svg" className='w-28 h-24 m-2 p-3' />
+            SQL
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white p-10 border-green-500 rounded-full border-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -56,11 +56,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/CSS.png" className='w-24 h-24' />
-            CSS
+            <img src="/Excel.png" className='w-28 h-24 m-2 p-3' />
+            Excel
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+              <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -71,11 +71,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/JS.png" className='w-24 h-24' />
-            JavaScript
+            <img src="/Tableau.jpg" className='w-28 h-24 rounded-full m-2 p-3' />
+            Tableau
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+              <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -86,11 +86,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/Python.png" className='w-24 h-24' />
+            <img src="/Python.png" className='w-28 h-24 rounded-full m-2 p-3' />
             Python
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -101,14 +101,14 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-          <img src="/Node.png" className='w-24 h-24' />
-            Node
+          <img src="/PowerBI.webp" className='w-28 h-24 m-2 p-3' />
+            Power BI
           </motion.div>
         </p>
       </div>
 
-      <div className='flex flex-row gap-20 mr-24'>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+      <div className='flex flex-row mt-10 gap-x-24 mr-24'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -119,11 +119,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/Next.png" className='w-24 h-24' />
-            Next
+            <img src="/R.jpg" className='w-28 h-24 rounded-lg m-2 p-3' />
+            R
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -134,11 +134,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/Git.png" className='w-24 h-24' />
+            <img src="/Git.png" className='w-28 h-24 m-2 p-3' />
             Git
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -149,11 +149,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/MongoDB.png" className='w-24 h-24' />
-            MongoDB
+            <img src="/Java.jpg" className='w-28 h-24 rounded-full m-2 p-3' />
+            Java
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8'>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -164,11 +164,11 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/react.png" className='w-24 h-24' />
-            React
+            <img src="/Word.png" className='w-28 h-24 m-2 p-3' />
+            Word
           </motion.div>
         </p>
-        <p className='mt-10 mb-10 text-white border-2 p-10 border-cyan-500 rounded-full border-x-8'>
+        <p className='mt-10 mb-10 text-white border-8 p-10 border-green-500 rounded-full border-x-8  '>
           <motion.div
             className='text-center text-lg'
             initial="hidden"
@@ -179,8 +179,8 @@ export default function Skills() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <img src="/Express.png" className='w-24 h-24' />
-            Express
+            <img src="/PowerPoint.webp" className='w-28 h-24 m-2 p-3' />
+            PowerPoint
           </motion.div>
         </p>
       </div>

@@ -27,7 +27,7 @@ export default function Landing({setSelectedPage}) {
             </p>
 
             <p className='mt-10 mb-10 text-4xl text-start'>
-              Full Stack Developer
+                Welcome to my portfolio.
             </p>
           </motion.div>
 
