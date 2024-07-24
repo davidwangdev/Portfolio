@@ -32,7 +32,7 @@ export default function Navbar({isTopOfPage, selectedPage, setSelectedPage}) {
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           /> 
-          <Link page="Contact Me!" 
+          <Link page="Contact" 
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />            

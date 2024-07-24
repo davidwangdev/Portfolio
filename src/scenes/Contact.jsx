@@ -13,9 +13,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact me!">
+    <section id="contact">
 
-      <div className="flex gap-16 mt-5 text-center justify-center">
+      <div className="flex gap-16 text-center justify-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -26,10 +26,10 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className='mt-28'>
-            <p className="font-semibold text-4xl mb-12">
+          <div className='mt-20'>
+            <p className="font-semibold text-4xl mb-6">
               <span className="text-yellow">Contact Me</span>
-              <div className='mt-12'>
+              <div className='mt-4'>
                 <LineGradient />
               </div>
             </p>
@@ -53,8 +53,8 @@ const Contact = () => {
             />
             {errors.name && (
               <p className="text-red">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
+                {errors.name.type === "required" && "Please enter your name."}
+                {errors.name.type === "maxLength" && "Max name length is 100 characters."}
               </p>
             )}
 
@@ -69,7 +69,7 @@ const Contact = () => {
             />
             {errors.email && (
               <p className="text-red">
-                {errors.email.type === "required" && "This field is required."}
+                {errors.email.type === "required" && "Please provide your email."}
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
@@ -96,10 +96,10 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-2 bg-yellow font-semibold text-deep-blue hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
-              Send Message!
+              Send Message
             </button>
           </form>
         </motion.div>

@@ -27,10 +27,10 @@ export default function DotGroup({selectedPage, setSelectedPage}) {
         onClick={() => setSelectedPage('projects')}
       />
       <AnchorLink
-        className={`${selectedPage === 'contact me!' ? selectedStyles : "bg-dark-grey"} 
+        className={`${selectedPage === 'contact' ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}
-        href="#contact me!"
-        onClick={() => setSelectedPage('contact me!')}
+        href="#contact"
+        onClick={() => setSelectedPage('contact')}
       />
     </div>
   )

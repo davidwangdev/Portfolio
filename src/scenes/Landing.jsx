@@ -22,12 +22,8 @@ export default function Landing({setSelectedPage}) {
             visible: {opacity: 1, x: 0},
            }}
           >
-            <p className='text-6xl z-10 text-start'>
+            <p className='text-6xl z-10 text-start mb-10'>
               Hi, I'm David.
-            </p>
-
-            <p className='mt-10 mb-10 text-4xl text-start'>
-                Welcome to my portfolio.
             </p>
           </motion.div>
 
@@ -45,16 +41,16 @@ export default function Landing({setSelectedPage}) {
               className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500'
             >
-              Currently looking for work
+                Welcome to my portfolio.
             </AnchorLink>
             <AnchorLink 
               className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
-              onClick={() => setSelectedPage('contact me!')}
-              href="#contact me!"
+              onClick={() => setSelectedPage('contact')}
+              href="#contact"
             >
               <div className='bg-deep-blue hover:text-red transition duration-500
               w-full h-full flex items-center justify-center px-10'>
-                Let's chat!
+                Contact Me
               </div>
             </AnchorLink>
           </motion.div>
