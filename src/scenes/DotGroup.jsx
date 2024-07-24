@@ -7,7 +7,7 @@ export default function DotGroup({selectedPage, setSelectedPage}) {
   before:rounded-full before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`
 
   return (
-    <div className='flex flex-col gap-6 fixed top-[60%] right-7'>
+    <div className='flex flex-col gap-12 fixed top-[50%] right-4'>
       <AnchorLink 
         className={`${selectedPage === 'home' ? selectedStyles : "bg-dark-grey"} 
         w-3 h-3 rounded-full`}

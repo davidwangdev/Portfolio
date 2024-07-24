@@ -28,7 +28,7 @@ const Contact = () => {
         >
           <div className='mt-20'>
             <p className="font-semibold text-4xl mb-6">
-              <span className="text-yellow">Contact Me</span>
+              <span className="text-red">Contact</span>
               <div className='mt-4'>
                 <LineGradient />
               </div>
