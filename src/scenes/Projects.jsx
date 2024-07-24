@@ -19,7 +19,7 @@ const Project = ({ name, title, link }) => {
   const projectTitle = name.split(' ').join('-').toLowerCase();
   
   return (
-    <motion.div variants={projectVariant} className='relative w-full md:w-[45%] m-4'>
+    <motion.div variants={projectVariant} className='relative w-full md:w-[45%] mb-8'>
       <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full w-full">
         <div className={overlayStyles}>
           <p className='text-2xl'>{name}</p>
@@ -33,7 +33,7 @@ const Project = ({ name, title, link }) => {
 
 export default function Projects() {
   return (
-    <section id="projects" className='pt-24 pb-48 bg-deep-blue'>
+    <section id="projects" className='pt-24 pb-24 bg-deep-blue'>
       {/* Headings */}
       <motion.div
         className='w-1/2 mx-auto text-center'
