@@ -52,7 +52,7 @@ export default function Projects() {
       </motion.div>
 
       <motion.div
-        className='flex flex-wrap justify-center mt-8'
+        className='flex flex-wrap justify-center mt-24'
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -63,6 +63,7 @@ export default function Projects() {
         {/* Project 2 */}
         <Project name="Project 2" title="NCB Auto Website" link="https://ncbauto.fly.dev" />
       </motion.div>
+
     </section>
   )
 }
