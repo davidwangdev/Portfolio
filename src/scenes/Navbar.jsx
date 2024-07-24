@@ -19,7 +19,7 @@ export default function Navbar({isTopOfPage, selectedPage, setSelectedPage}) {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed p-6`}>
       <div className='flex items-center justify-center mx-auto w-5/6'>
-        <div className='flex gap-16 text-sm font-semibold'>
+        <div className='flex gap-16 text-lg font-semibold'>
           <Link page="Home" 
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}

@@ -52,7 +52,7 @@ export default function Projects() {
       </motion.div>
 
       <motion.div
-        className='flex flex-wrap justify-center mt-24'
+        className='flex flex-wrap justify-center mt-36 mb-36'
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ export default function Projects() {
         {/* Project 1 */}
         <Project name="Project 1" title={`"Who Wants To Be A Millionaire" Quiz App`} link="https://whowants.vercel.app" />
         {/* Project 2 */}
-        <Project name="Project 2" title="NCB Auto Website" link="https://ncbauto.fly.dev" />
+        <Project name="Project 2" title="Hospital Automation Website" link="https://ncbauto.fly.dev" />
       </motion.div>
 
     </section>

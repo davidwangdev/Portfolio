@@ -1,5 +1,5 @@
 import LineGradient from "../components/LineGradient";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
   return (
@@ -13,9 +13,9 @@ export default function Skills() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
           variants={{ 
-          hidden: { opacity: 0, x: -50},
-          visible: {opacity: 1, x: 0},
-        }}>
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}>
           <p className='font-semibold text-4xl mb-5'>
             <span className='text-red'>Skills / Technologies</span>
           </p>
@@ -23,11 +23,11 @@ export default function Skills() {
         </motion.div>
       </div>
       {/* Skills */}
-      <div className='flex flex-wrap justify-center gap-2'>
+      <div className='grid grid-cols-1 md:grid-cols-5 gap-20 mt-20'>
         {['SQL', 'Excel', 'Tableau', 'Python', 'Power BI', 'Googling', 'PyTorch', 'R', 'Pandas', 'PowerPoint'].map((skill, index) => (
           <motion.div
             key={skill}
-            className='text-white p-10 rounded-full'
+            className='flex flex-col items-center p-5'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -37,7 +37,7 @@ export default function Skills() {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <img src={`/${skill}.png`} className='w-28 h-24 m-2 p-3' alt={`${skill} logo`} />
+            <img src={`/${skill}.png`} className='w-20 h-20 mb-2' alt={`${skill} logo`} />
             <p className='text-center text-lg'>{skill}</p>
           </motion.div>
         ))}
